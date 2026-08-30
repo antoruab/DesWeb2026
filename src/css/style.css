@@ -1,0 +1,91 @@
+:root {
+  --azul-oscuro: #353A4C;
+  --azul-navbar: #394988;
+  --azul-principal: #367ADF;
+  --azul-hover: #4FACE5;
+  --azul-claro: #AED5F5;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--azul-claro);
+  color: var(--azul-oscuro);
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark .card-title {
+  color: #ffffff;
+}
+ 
+.navbar {
+  background-color: var(--azul-navbar);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: var(--azul-hover) !important;
+}
+
+/* ===== Tarjetas (flexbox + selectores) ===== */
+.card {
+  background-color: #ffffff;
+  width: 300px;
+  border: 2px solid var(--azul-principal);
+  border-radius: 10px;
+  padding: 1em;              /* padding en em */
+  margin: 20px;              /* margin en px */
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+/* selector de pseudoclase */
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--azul-hover);
+}
+
+.card-title {
+  color: var(--azul-navbar);
+  font-weight: 600;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--azul-navbar);
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5%;               /* padding en % */
+}
+
+.footer-link:hover {
+  color: var(--azul-hover);
+}
+
+/* ===== Botón modo oscuro ===== */
+#toggle-theme {
+  border-color: var(--azul-hover);
+}
+
+/* ===== Modo oscuro (se activa con clase .dark en el body) ===== */
+body.dark {
+  background-color: var(--azul-oscuro);
+  color: var(--azul-claro);
+}
+
+body.dark .card {
+  background-color: var(--azul-navbar);
+  color: #ffffff;
+}
