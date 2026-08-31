@@ -6,18 +6,26 @@
   --azul-claro: #AED5F5;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--azul-claro);
   color: var(--azul-oscuro);
   margin: 0;
   transition: background-color 0.3s, color 0.3s;
+  display: flex;             
+  flex-direction: column;     
+  min-height: 100vh;          
 }
+
 
 body.dark .card-title {
   color: #ffffff;
 }
- 
+
 .navbar {
   background-color: var(--azul-navbar);
 }
@@ -42,8 +50,8 @@ body.dark .card-title {
   width: 300px;
   border: 2px solid var(--azul-principal);
   border-radius: 10px;
-  padding: 1em;              /* padding en em */
-  margin: 20px;              /* margin en px */
+  padding: 1em;
+  margin: 20px;
   text-align: center;
   transition: transform 0.2s;
 }
@@ -59,15 +67,32 @@ body.dark .card-title {
   font-weight: 600;
 }
 
+.btn-primary {
+  background-color: var(--azul-principal);
+  border-color: var(--azul-principal);
+}
+
+.btn-primary:hover {
+  background-color: var(--azul-hover);
+  border-color: var(--azul-hover);
+}
+
 /* ===== Footer ===== */
 footer {
   background-color: var(--azul-navbar);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;                   
 }
 
 .footer-link {
   color: #ffffff;
   text-decoration: none;
-  padding: 5%;               /* padding en % */
+  padding: 5%;
 }
 
 .footer-link:hover {
@@ -79,7 +104,7 @@ footer {
   border-color: var(--azul-hover);
 }
 
-/* ===== Modo oscuro (se activa con clase .dark en el body) ===== */
+/* ===== Modo oscuro ===== */
 body.dark {
   background-color: var(--azul-oscuro);
   color: var(--azul-claro);
