@@ -44,7 +44,7 @@ body.dark .card-title {
   color: var(--azul-hover) !important;
 }
 
-/* ===== Tarjetas (flexbox + selectores) ===== */
+/* ===== Tarjetas ===== */
 .card {
   background-color: #ffffff;
   width: 300px;
@@ -56,7 +56,7 @@ body.dark .card-title {
   transition: transform 0.2s;
 }
 
-/* selector de pseudoclase */
+
 .card:hover {
   transform: translateY(-5px);
   border-color: var(--azul-hover);
@@ -99,12 +99,12 @@ main {
   color: var(--azul-hover);
 }
 
-/* ===== Botón modo oscuro ===== */
+
 #toggle-theme {
   border-color: var(--azul-hover);
 }
 
-/* ===== Modo oscuro ===== */
+
 body.dark {
   background-color: var(--azul-oscuro);
   color: var(--azul-claro);

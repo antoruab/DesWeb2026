@@ -1,0 +1,28 @@
+.explicacion {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.storage-box {
+  background-color: #ffffff;
+  border: 2px solid var(--azul-principal);
+  border-radius: 10px;
+  padding: 2em;
+  text-align: center;
+}
+
+body.dark .storage-box {
+  background-color: var(--azul-navbar);
+  color: #ffffff;
+}
+
+.resultado {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--azul-navbar);
+}
+
+body.dark .resultado {
+  color: var(--azul-claro);
+}

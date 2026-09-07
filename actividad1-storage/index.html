@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../src/img/logo.png">
+    <title>Actividad 1 - Local Storage vs Session Storage</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../src/img/logo.png" alt="logo" width="35" class="me-2">
+                Desarrollo Web
+            </a>
+            <a href="../index.html" class="btn btn-outline-light ms-auto">← Volver</a>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <h1 class="titulo-galeria text-center mb-3">Local Storage vs Session Storage</h1>
+        <p class="text-center explicacion mb-5">
+            Escribe un nombre y guárdalo. El de <strong>Local Storage</strong> se queda guardado
+            aunque cierres el navegador. El de <strong>Session Storage</strong> se borra apenas
+            cierras la pestaña, pero mientras la tengas abierta, sobrevive si recargas la página.
+        </p>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- LOCAL STORAGE -->
+            <div class="col-md-5">
+                <div class="storage-box">
+                    <h3>Local Storage</h3>
+                    <input type="text" id="inputLocal" class="form-control mb-3" placeholder="Escribe un nombre">
+                    <button id="btnLocal" class="btn btn-custom w-100">Guardar</button>
+
+                    <p class="mt-4 mb-1"><strong>Nombre guardado:</strong></p>
+                    <p id="resultadoLocal" class="resultado">(nada guardado todavía)</p>
+                </div>
+            </div>
+
+            <!-- SESSION STORAGE -->
+            <div class="col-md-5">
+                <div class="storage-box">
+                    <h3>Session Storage</h3>
+                    <input type="text" id="inputSession" class="form-control mb-3" placeholder="Escribe un nombre">
+                    <button id="btnSession" class="btn btn-custom w-100">Guardar</button>
+
+                    <p class="mt-4 mb-1"><strong>Nombre guardado:</strong></p>
+                    <p id="resultadoSession" class="resultado">(nada guardado todavía)</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
