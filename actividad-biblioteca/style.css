@@ -1,0 +1,26 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #f4ead5, #d9c7a3);
+  min-height: 100vh;
+}
+ 
+.card {
+  border-radius: 15px;
+  border: none;
+}
+ 
+#btnProcesar {
+  background-color: #7b4b27;
+  color: white;
+}
+ 
+#btnProcesar:hover {
+  background-color: #5e3a1e;
+  color: white;
+}
+ 
+#resultado {
+  color: #7b4b27;
+  font-size: 1.1rem;
+}
+ 
