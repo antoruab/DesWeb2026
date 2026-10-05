@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e1b2e, #2d2440);
+  color: #f1f1f1;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #241f35;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #c9a7ff;
+  text-decoration: none;
+}
+
+.navbar-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #c9a7ff;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.navbar-link:hover {
+  background-color: #c9a7ff;
+  color: #1e1b2e;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.status {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.winner-status {
+  color: #ffd166;
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  margin: 4px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #2d2440;
+  border: 2px solid #c9a7ff;
+  border-radius: 12px;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: transform 0.15s, background-color 0.2s;
+}
+
+.square:hover {
+  background-color: #3a2f54;
+  transform: scale(1.05);
+}
+
+.square.winning {
+  background-color: #ffd166;
+  color: #1e1b2e;
+  animation: glow 0.6s ease infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #ffd166;
+  }
+
+  to {
+    box-shadow: 0 0 20px #ffd166;
+  }
+}
+
+.restart-btn {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #c9a7ff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #1e1b2e;
+  font-weight: bold;
+}
+
+.restart-btn:hover {
+  background-color: #b48aff;
+}
+
+.game-info {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.history-btn {
+  background: none;
+  border: 1px solid #c9a7ff;
+  color: #f1f1f1;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.history-btn:hover {
+  background-color: #c9a7ff;
+  color: #1e1b2e;
+}
