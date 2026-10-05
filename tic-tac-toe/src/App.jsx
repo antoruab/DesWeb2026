@@ -4,7 +4,7 @@ import "./App.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="/" className="navbar-brand">🎮 Desarrollo Web</a>
+      <a href="/" className="navbar-brand">Desarrollo Web</a>
       <a href="/" className="navbar-link">Inicio</a>
     </nav>
   );
@@ -37,7 +37,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
   let status;
   if (winner) {
-    status = `Ganó ${winner} 🎉`;
+    status = `Ganó ${winner} yupi `;
   } else if (squares.every((square) => square !== null)) {
     status = "Empate";
   } else {
