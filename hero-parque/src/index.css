@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Shantell Sans", cursive;
   background-color: #f4fbf1;
   color: #2d4a2b;
 }
