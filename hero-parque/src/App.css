@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 8vw;
+  pointer-events: none;
+}
+
+.hero-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  max-width: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hero-saludo {
+  margin: 0;
+  color: #5a8f4a;
+  font-size: 1.1rem;
+}
+
+.hero-nombre {
+  margin: 0.3rem 0;
+  font-size: 2.6rem;
+  color: #2d4a2b;
+}
+
+.hero-titulo {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  color: #4b6b48;
+}
+
+.hero-boton {
+  display: inline-block;
+  background-color: #5a8f4a;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-weight: bold;
+  pointer-events: auto;
+}
+
+.hero-boton:hover {
+  background-color: #467a38;
+}
+
+.proyectos {
+  padding: 4rem 8vw;
+  text-align: center;
+}

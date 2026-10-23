@@ -1,6 +1,6 @@
-import Header from "./componentes/Header";
-import Sidebar from "./componentes/Sidebar";
-import GameCard from "./componentes/GameCard";
+import Header from "../../indieplay-catalogo/src/componentes/Header";
+import Sidebar from "../../indieplay-catalogo/src/componentes/Sidebar";
+import GameCard from "../../indieplay-catalogo/src/componentes/GameCard";
 import "./App.css";
 
 export default function App() {
